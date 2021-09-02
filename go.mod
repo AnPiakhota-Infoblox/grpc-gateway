@@ -1,6 +1,6 @@
-module github.com/grpc-ecosystem/grpc-gateway/v2
+module github.com/infobloxopen/grpc-gateway/v2
 
-go 1.14
+go 1.16
 
 require (
 	github.com/antihax/optional v1.0.0

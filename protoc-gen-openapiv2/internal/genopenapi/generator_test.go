@@ -11,9 +11,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/codegenerator"
-	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/descriptor"
-	genpkg "github.com/grpc-ecosystem/grpc-gateway/v2/internal/generator"
+	"github.com/infobloxopen/grpc-gateway/v2/internal/codegenerator"
+	"github.com/infobloxopen/grpc-gateway/v2/internal/descriptor"
+	genpkg "github.com/infobloxopen/grpc-gateway/v2/internal/generator"
 	"google.golang.org/protobuf/types/pluginpb"
 )
 

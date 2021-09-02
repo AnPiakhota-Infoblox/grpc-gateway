@@ -11,7 +11,7 @@ https://developers.google.com/protocol-buffers/docs/reference/other
 
 Basically, protoc serializes the message descriptions it parsed into a **CodeGenerationRequest** message and writes it to a plugin via stdin. The plugin parses the request, generates the source code that the user requested and writes it back as a **CodeGenerationResponse** serialized to binary representation via stdout.
 
-Because **_protoc-gen-openapiv2_** takes an instance of CodeGeneratorRequest for an input, it is difficult to initialize one directly. Much simpler way is to parse certain proto and get it as the result of such parsing. This is what the plugin does. It simply writes the whole binary content of received CodeGeneratorRequest into a file with `cgreq` extension which is then can be feed into **_protoc-gen-openapiv2_** plugin in order to get and verify the output.
+Because **_protoc-gen-openapiv2_** takes an instance of CodeGeneratorRequest for an input, it is difficult to initialize one directly. Much simpler way is to parse certain proto and get it as the result of such parsing. This is what the plugin does. It simply writes the whole binary content of received CodeGeneratorRequest into a file with `cgreq` extension which is then can be fed into **_protoc-gen-openapiv2_** plugin in order to get and verify the output.
 
 ## How to use
 
